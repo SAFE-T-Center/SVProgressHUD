@@ -148,5 +148,10 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 
 + (NSTimeInterval)displayDurationForString:(nullable NSString*)string;
 
+#pragma mark - Helpers
+
+- (void)showProgress:(float)progress status:(nullable NSString*)status;
+- (void)showImage:(nullable UIImage*)image;
+
 @end
 

@@ -1545,4 +1545,11 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
     if (!_isInitializing) _maxSupportedWindowLevel = maxSupportedWindowLevel;
 }
 
+#pragma mark - Helpers
+
+- (void)showImage:(UIImage*)image {
+    self.imageView.image = image;
+    self.imageView.hidden = NO;
+}
+
 @end
